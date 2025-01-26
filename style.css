@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Text", serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F0F0F0;
+}
+
+main {
+    /* width: 60%; */
+    /* height: 90%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 15px;
+    border-bottom-right-radius: 200px;
+    gap: 10px;
+    padding: 5%;
+    background-color: #fff;
+}
+
+
+/* SESSÃO DOS INPUTS*/
+.section-input {
+
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    /* border-bottom: 1px solid #dbdbdb; */
+}
+
+.div-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.div-inputs input {
+    width: 145px;
+    height: 70px;
+    outline: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 27px;
+    font-weight: 700;
+    color: #141414;
+    border: 2px solid rgba(169, 169, 169, .4);
+
+    &:focus {
+        border-color: #854dff;
+    }
+
+}
+
+
+input[type=number]::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+.div-inputs label {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #716f6f;
+}
+
+.div-inputs p {
+    font-style: italic;
+}
+
+
+/* SESSÃO DO BOTÃO*/
+.section-btn {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.section-btn hr {
+    width: 35vw;
+}
+
+.section-btn .btn {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: #854dff;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #141414;
+    }
+
+    img {
+        width: 70%;
+    }
+}
+
+/* SESSÃO DAS INFORMAÇÕES*/
+.section-info {
+    /* width: 60%; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+}
+
+.section-info h2 {
+    font-size: 87px;
+    font-style: italic;
+    color: #141414;
+}
+
+.section-info span {
+    color: #854dff;
+}
+
+@media screen and (max-width : 1200px) {
+    main {
+
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        padding: 9px;
+        border-bottom-right-radius: 130px;
+    }
+
+
+    .div-inputs input {
+        width: 114px;
+    }
+
+    .section-btn hr {
+        width: 380px;
+    }
+
+    .section-btn .btn {
+        width: 70px;
+        height: 70px;
+        right: 41%;
+        position: absolute;
+    }
+
+    .section-info h2 {
+        font-size: 74px;
+    }
+
+}
